@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Practice! </title>
+		<meta charset="utf-8">
+		<LINK rel="stylesheet" href="static/style.css">
+	</head>
+	<body >
+	<div id="app">
+		<h1>PRACTICE !</h1>
+		<div id = "upload" >
+				<div class="normal">
+				 Questions, with answers:
+				</div>
+				<textarea id="textIn" name="textIn" ></textarea> 
+				<button id="start" class="btnNormal button " onclick="start_practice()">Start </button>
+				<!--<button id="save" class="btnDark button" onclick="openSave()">Save/Load</button> --!>
+					
+			</div>
+			<div id = "practice"> 
+			<!-- Here come specific instructions for current dataset--!>
+	   			<div id="instruction"></div>
+				<div id ="word">PLACEHOLDER</div>
+
+				<div id="input_line">
+					<input id="answer" value="" onkeypress="check_key(event)"/></input>
+					<button id ="send"class="btnNormal button" onclick="send_answer()">Answer</button>
+				</div>
+			</div>
+			<div id = "done">
+				THE END RESULT <br>
+				<span id ="mark">A </span>
+				<span id = "result">1/1 </span>
+				
+				<br>
+				<button id="retry" class="btnDark button" onclick="start_practice()">Retry</button>
+				<button id="new" class="btnNormal button" onclick="init()"><span>New practice</button>
+
+				<h2>RESULTS</h2> <br>
+	     				<div class="results_row">
+						<span class="index">nr</span>
+						<span class="answer">answer</span>
+						<span class="trueAnswer">right answer</span>
+						<span class="result">result</span>
+
+					</div>	
+				<div id ="results">
+					<!-- NO TABLES !!!--!>
+				</div>
+			</div>
+
+		</div>
+
+		<!--Let's position overlays BELLOW here, I think--!>
+		<div id="save-overlay" >
+			<div id="overlay-content">
+				<a href="javascript:void(0)" class="btnClose" onclick="closeSave()">&times;</a>
+				<h3> Save </h3>
+
+				Save as: 
+				<input id="savePrompt" class="underline"></input>
+				<button id="save-data" class="btnNormal button" onclick="save_session(document.getElementById('savePrompt').value, document.getElementById('textIn').value)">Save</button>
+
+				<hr>
+				<h3> Load: </h3>
+				<div id="loadList">
+
+				</div>
+					
+			</div>
+		</div>
+
+		<footer>
+			v0.01&alpha; Andres Jõgi 2016
+		</footer>
+
+	</body>
+	<script src="static/localstorage.js"></script>
+	<script src="static/app.js"></script>
+</html>

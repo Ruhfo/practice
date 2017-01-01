@@ -1,0 +1,253 @@
+html { height: 100%;}
+
+body {
+	background-color: #dddddd;
+	top: 0px;
+	font-family: sans-serif;
+	font-size: 150%;
+	color: #999999;
+	text-align: left;
+	padding-left: 5%;
+	padding-right: 5%;
+
+	height: 100%;
+} 
+
+h1 {
+	color: #55aacf;
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+} 
+
+h2 { 
+	text-align: center;
+       	color: #999999;
+}
+
+h3 {
+	text-align: center;
+	color: #999999;
+}
+
+
+.normal {
+	color: #999999;
+	text-align: left;
+}
+
+#word {
+	text-align: center;
+	background-color: #ffffff;
+	border-radius: 3%;
+	width: 100%;
+
+}
+
+
+#app {
+	background-color: #f4f4fa;
+	font-size: 100%;
+	text-align: left;
+	padding-top: 1em;
+	margin: 0px;
+	height: 100%;
+	overflow: auto;
+}
+
+#results{
+	text-align: center;
+}
+
+.false {
+	background-color: rgba(255,88,88, 0.05)
+}
+.true {
+	background-color: rgba(88,255,88, 0.05);
+}
+
+input {
+	color: #999999;
+	background-color: #ffffff;
+	border-radius: 3%;
+	border: none;
+
+	font-size: 100%;
+}
+
+.underline {
+	background-color: #ffffff;
+	border-style: none;
+	border-bottom: 1px solid #555555;
+}
+
+footer {
+	text-align: left;
+	font-size: 0.5em;
+	bottom: 0px;
+	display: block;
+	position: relative;
+}
+
+#input_line {
+	margin-top: 5%;
+	padding: 0;
+	width: 100%;
+		-webkit-box-sizing: border-box;
+		-o-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+}
+
+#answer {
+	width: 75%;
+	display: inline-block;
+	height: 1.25em;
+}
+
+#send {
+	width: 20%;
+	display: inline-block;
+	height: 1.25em;
+}
+
+
+#upload {
+	display: all;
+	margin: 5%;
+}
+
+#textIn {
+	font-size: 100%;
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 12em;
+}
+#practice {
+	display: none;
+	font-size: 125%;
+	margin: 5%;
+}
+
+#done {
+	display: none;
+	text-align: center;
+}
+
+#mark {
+	font-size: 800%;
+}
+/*Results styling*/
+.questions_row {
+	width: 100%;
+	text-align: left;
+}
+.results_row {
+	width: 100%;
+	overflow: hidden;
+	text-align: left;
+}
+
+.index {
+	float: left;
+	width: 10%;
+}
+
+.answer {
+	float: left;
+	width: 40%;
+}
+.trueAnswer {
+	float: left;
+	width: 40%;
+}
+
+.result {
+	text-align: right;
+	float: right;
+	width: 10%;
+}
+
+/*Overlays*/
+#save-overlay {
+	height: 0%;
+	max-height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,0.5);
+	overflow: hidden;
+	transition: 0.3s;
+}
+
+#overlay-content {
+	position: relative;
+	background-color: #ffffff;
+
+	margin: 10%;
+	height: 40%;
+	padding: 3%;
+
+	border: 2px green solid; 
+}
+
+#loadList {
+	overflow: auto;
+}
+
+.btnClose {
+	float: right;
+	color: #555555;
+	text-decoration: none;
+}
+
+.btnClose:hover {
+	color: #777777;
+}
+
+/*Button class for :hover decorations */
+.button{
+	font-size: 1em;
+	height: 2em;
+	border-radius: 4px;
+	margin: 0;
+	margin-top: 0.1em;
+	width: 20%;
+
+	transition: all 0.5s;
+	display: inline-block;
+	text-align: center;
+}
+.button:after {
+	content: '\00bb';
+	opacity: 0;
+	transition: 0.5s;
+}
+.button:hover:after {
+	opacity: 1;
+	transition: 0.5s;
+	padding-left: 20px;
+}
+
+/* Color classes */
+.btnNormal {
+	color: white;
+	background-color: #008CBA;
+	border-style: none;
+}
+.btnNormal:active {
+	background-color: #005a98;
+	transition: 0.2s;
+}
+
+.btnDark {
+	color: white;
+	background-color: #555555;
+	border-style: none;
+}
+.btnDark:active {
+	background-color: #777777;
+	transition: 0.2s;
+}
+
